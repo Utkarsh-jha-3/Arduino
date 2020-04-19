@@ -17,6 +17,10 @@ delay(200);
 Output:<br>
 ![Serial Communication](https://cdn.instructables.com/FOO/XDSD/J7JMSYT1/FOOXDSDJ7JMSYT1.LARGE.jpg?auto=webp&frame=1&fit=bounds)<br>
 The above picture shows the Serial Output for the code.<br>
+
+You may visit 
+[this](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
+for more details.<br><br>
 ### Serial Communication using Python
 Python can be used to interact with microcontrollers and other serial-port-enabled devices (including those using virtual ports). <br><br>
 ![Circuit](https://maker.pro/storage/3ZalKvD/3ZalKvDI6JPuLpMCvWxz2oBSmXKVYf7QkYM8gOTB.jpeg)
@@ -47,9 +51,6 @@ Commonly used Functions for using the Serial Port:
 * write(data) – This will write the data passed to the function to the serial port
 * in_waiting – This variable holds the number of bytes in the buffer<br><br>
 
-You may visit :
-https://www.arduino.cc/reference/en/language/functions/communication/serial/ 
-for more details.<br><br>
 
 # I2C Protocols
 ### What are I2C Protocols?
