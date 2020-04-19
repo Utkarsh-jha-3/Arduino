@@ -46,6 +46,11 @@ Commonly used Functions for using the Serial Port:
 * read(size) – This will read n number of bytes from the serial port
 * write(data) – This will write the data passed to the function to the serial port
 * in_waiting – This variable holds the number of bytes in the buffer<br><br>
+
+You may visit :
+https://www.arduino.cc/reference/en/language/functions/communication/serial/ 
+for more details.<br><br>
+
 # I2C Protocols
 ### What are I2C Protocols?
 **I2C** _(pronounced I square C)_ or **Inter-Integrated Circuit** is a serial protocol for two-wire interface to connect low-speed devices like *microcontrollers, EEPROMs, A/D and D/A converters, I/O interfaces* and other similar peripherals in embedded systems. I2C bus is popular because it is simple to use, there can be more than one master, only upper bus speed is defined. The easy implementations comes with the fact that only two wires are required for communication between up to almost 128 (112) devices when using 7 bits addressing and up to almost 1024 (1008) devices when using 10 bits addressing. <br><br>
