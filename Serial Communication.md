@@ -83,5 +83,5 @@ Commonly used Functions for using the Serial Port:
 
 References:<br>
 * https://maker.pro/pic/tutorial/introduction-to-python-serial-ports
-* *Arduino and C programming* Course available on Courseera
+* *Arduino and C programming* Course available on *Coursera*
 * https://www.arduino.cc/reference/en/language/functions/communication/serial/
