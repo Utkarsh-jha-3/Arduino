@@ -18,7 +18,8 @@ Serial.begin(9600)
 Serial.begin(9600, SERIAL_8N1)
 ~~~
 An increase in band rate increases speed, though increasing the value of band rate above 9600 can cause synchronization errors.<br>We can also send text over Serial, this is done by using **Serial.print()** or **Serial.println()**. Example:
-~~~ Serial.println("Hello");
+~~~ 
+Serial.println("Hello");
 ~~~
 This prints **Hello** continuously in new lines. Strings are converted into ASCII values and then sent using UART.<br>
 Example:
