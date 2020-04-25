@@ -63,4 +63,5 @@ void loop() {
 ~~~
 <br><br>
 References:
-* *Interfacing with the Arduino* course available on Courseera
+* *Interfacing with the Arduino* Course available on *Coursera*
+* https://www.arduino.cc/en/Tutorial/MasterWriter
