@@ -3,7 +3,35 @@
 To transfer data from one system to another there are mainly two ways, **serial communication** and **parallel communtication**. As the name suggests, in serial type, the data is sent in a series form whereas in the parallel type the data is sent in a parallel type. What this means is that in parallel type, we would require a lot of wires connected between the systems which although **very fast** but is often **not feasable**. The serial type on the other hand sends the data in a serial order which therefore requires one cable for data transfer and one or two other for earthing etc. Hence we can deduce that this method is quite **slow** as compared to the other way but **is feasible**.<br><br>
 ### Serial Communication and Arduino
 Serial Communication is a process of sending data 1 bit at a time sequentially over a communication channel. This the way the Arduino board communicates to the computer. Serial Communication is used when we send a commond from computer to Arduino board and vice-versa. Thus, uploading a code uses the same. The LEDs (present on Arduino) **RX** and **TX** flash when the arduino receives data and transmits data respectively.<br>
-###### A simple Arduino code:
+UART(Universal Asynchronous Receiver/Transmitter) Protocol is used over the USB cable (having three different wires for Transmitting, Receiving and a Ground wire) for Serial Communication with the Arduino. The initialization is made with:<br>
+~~~
+Serial.begin(speed)
+~~~
+here, speed is the band rate. The initialization can also be made in the following way providing two arguments speed and configuration:<br>
+~~~
+Serial.begin(speed, configuration)
+~~~
+configuration sets data bits, parity bits(to check errors) and stop bit.<br>
+For example:<br>
+~~~
+Serial.begin(9600)
+Serial.begin(9600, SERIAL_8N1)
+~~~
+An increase in band rate increases speed, though increasing the value of band rate above 9600 can cause synchronization errors.<br>We can also send text over Serial, this is done by using **Serial.print()** or **Serial.println()**. Example:
+~~~ Serial.println("Hello");
+~~~
+This prints **Hello** continuously in new lines. Strings are converted into ASCII values and then sent using UART.<br>
+Example:
+~~~
+Serial.write(42);
+~~~
+This prints asterisk(\*) since the ASCII value of * is 42.<br>
+Apart from sending, we can also read data over Serial using Serial Monitor. When data is sent, it goes into a buffer in the Arduino untill it is read. **Serial.Available()** is used to see hpw many bytes are waiting in the buffer. For reading, we use **Serial.read()**. It returns 1 byte from Serial buffer and -1 for no data. **Serial.readBytes()** can be used for writing several data into a buffer. For example:
+~~~
+char buff[10];
+Serial.readBytes[buff,10];
+~~~
+###### A simple Arduino code:<br>
 ~~~
 void setup() {
 Serial.begin(9600);
@@ -50,5 +78,3 @@ Commonly used Functions for using the Serial Port:
 * read(size) – This will read n number of bytes from the serial port
 * write(data) – This will write the data passed to the function to the serial port
 * in_waiting – This variable holds the number of bytes in the buffer<br><br>
-
-
