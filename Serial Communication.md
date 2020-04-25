@@ -17,6 +17,7 @@ For example:<br>
 Serial.begin(9600)
 Serial.begin(9600, SERIAL_8N1)
 ~~~
+
 An increase in band rate increases speed, though increasing the value of band rate above 9600 can cause synchronization errors.<br>We can also send text over Serial, this is done by using **Serial.print()** or **Serial.println()**. Example:
 ~~~ 
 Serial.println("Hello");
@@ -79,3 +80,8 @@ Commonly used Functions for using the Serial Port:
 * read(size) – This will read n number of bytes from the serial port
 * write(data) – This will write the data passed to the function to the serial port
 * in_waiting – This variable holds the number of bytes in the buffer<br><br>
+
+References:<br>
+* https://maker.pro/pic/tutorial/introduction-to-python-serial-ports
+* *Arduino and C programming* Course available on Courseera
+* https://www.arduino.cc/reference/en/language/functions/communication/serial/
