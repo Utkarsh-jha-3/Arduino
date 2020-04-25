@@ -61,3 +61,6 @@ void loop() {
   Serial.println(X1);
 }
 ~~~
+<br><br>
+References:
+* *Interfacing with the Arduino* course available on Courseera
